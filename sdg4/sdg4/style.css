@@ -1,0 +1,165 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #333; /* dark blue */
+  padding: 1.6rem 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff; /* white */
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #ccc; /* light gray */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #f2f2f2; /* light gray */
+}
+
+section {
+  background-color: #fff; /* white */
+  padding: 2rem;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+section h2 {
+  color: #333; /* dark blue */
+  font-weight: bold;
+  margin-top: 0;
+}
+
+section p {
+  color: #666; /* dark gray */
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+#vision {
+  background-image: url('https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/E_SDG-goals_icons-individual-rgb-04.png');
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #c6efce; /* light green */
+}
+
+#mission {
+  background-color: #f7f7f7; /* light gray */
+}
+
+#tech-ed {
+  background-color: #e27878; /* dark gray */
+}
+
+#impact {
+  background-color: #fff; /* white */
+}
+
+#partners {
+  background-color: #e0f23c; /* light gray */
+}
+
+footer {
+  background-color: #55eee7; /* dark blue */
+  padding: 1rem;
+  text-align: center;
+  color: #fff; /* white */
+}
+
+footer a {
+  color: #fff; /* white */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc; /* light gray */
+}
+
+/* Responsive Styles */
+
+/* For desktops and laptops */
+@media (min-width: 1200px) {
+  section {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* For tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1199px) {
+  section {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  section img {
+    height: 150px;
+  }
+  footer {
+    padding: 0.5rem;
+  }
+}
